@@ -1,0 +1,13 @@
+.footer{
+  background-color: lightsteelblue;
+  display: flex;
+  justify-items: center;
+}
+
+.footer-text{
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 100px;
+  /*min-width:*/
+  text-align-last: center;
+}
