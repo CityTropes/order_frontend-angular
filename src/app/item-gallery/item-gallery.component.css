@@ -5,15 +5,19 @@
 
 
 .item-input-container{
-  background-color: #D6E9FE;
-  border-bottom-color: brown;
-  border-top-color: brown;
-  border-bottom-width: medium;
+  background-color: lightsteelblue;
+  border-bottom-color: black;
+  border-top-color: black;
+  border-bottom-width: thin;
   border-top-width: thin;
   display: flex;
   align-items: baseline;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.itemTitle{
+  padding-left: 20px;
 }
 
 .search-item-group{
@@ -37,7 +41,7 @@
 
 .search-label p{
   display: contents;
-  color: darkblue;
+  color: black;
   font-weight: bold;
   font-size: large;
 }

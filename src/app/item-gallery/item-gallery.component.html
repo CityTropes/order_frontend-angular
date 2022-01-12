@@ -1,29 +1,31 @@
-<h2>Items</h2>
+
+
+<div class="item-input-container">
+  <h2 class="itemTitle">Items</h2>
+  <div class="search-item-group">
+
+    <div class="search-label">
+      <p>Search</p>
+    </div>
+    <div>
+      <input id="name"
+             name="name"
+             class="form-control"
+             placeholder="Name"
+             [(ngModel)]="searchText"
+      >
+    </div>
+  </div>
+
+</div>
 
 <div class="item-container">
 
-<!--  <div class="item-input-container">-->
 
-<!--    <div class="search-item-group">-->
+  <!--    <div class="create-item-link">-->
+  <!--      <a routerLink="/items/add">Create Item</a>-->
+  <!--    </div>-->
 
-<!--      <div class="search-label">-->
-<!--        <p>Search</p>-->
-<!--      </div>-->
-<!--      <div>-->
-<!--        <input id="name"-->
-<!--               name="name"-->
-<!--               class="form-control"-->
-<!--               placeholder="Name"-->
-<!--               [(ngModel)]="searchText"-->
-<!--        >-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="create-item-link">-->
-<!--      <a routerLink="/items/add">Create Item</a>-->
-<!--    </div>-->
-
-<!--  </div>-->
 
   <ul class="card-list">
     <li *ngFor="let item of items | nameFilter : searchText" class="card">
