@@ -7,14 +7,16 @@ import {HttpClientModule} from "@angular/common/http";
 import { ItemComponent } from './item/item.component';
 import { ItemGalleryComponent } from './item-gallery/item-gallery.component';
 import { NameFilterPipe } from './pipe/name-filter.pipe';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { CreateItemComponent } from './create-item/create-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
     ItemGalleryComponent,
-    NameFilterPipe
+    NameFilterPipe,
+    CreateItemComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +24,12 @@ import {FormsModule} from "@angular/forms";
     LayoutModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
+  exports: [
+    ItemGalleryComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
