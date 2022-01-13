@@ -10,4 +10,12 @@ export class ItemComponent{
 
   @Input() item!: Item
 
+  //or use items$!: Observable<Item[]>; and in html:
+// <ul>
+// <li *ngFor="let item of items$ | async">
+// <p>{{item.id}}</p>
+// <a [routerLink]="'/items/' + item.id">Link</a>
+//   </li>
+//   </ul>
+
 }

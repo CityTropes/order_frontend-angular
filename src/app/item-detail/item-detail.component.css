@@ -1,0 +1,47 @@
+
+
+.itemTitle{
+
+  padding-bottom: 10px;
+}
+.itemTitleTop{
+  padding-left: 20px;
+}
+
+.item-detail-input-container{
+  background-color: lightsteelblue;
+  border-bottom-color: black;
+  border-top-color: black;
+  border-bottom-width: thin;
+  border-top-width: thin;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.createFormDetails{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px
+}
+
+.form-label-details {
+  display: flex;
+  /*padding-left: 0px;*/
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/*.description-input{*/
+/*  height:100px;*/
+/*  text-align: left;*/
+/*  display: block;*/
+/*}*/
+
+.form-control, .form-select {
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+}

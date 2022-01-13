@@ -1,1 +1,42 @@
-<p>item-detail works!</p>
+
+<div class="item-detail-input-container">
+  <h2 class="itemTitleTop">Item overview</h2>
+</div>
+
+<div class="createFormDetails" *ngIf="item$ | async as itemData; else loading">
+  <h3 class="itemTitle">Item details</h3>
+  <p><b>Id:</b> {{itemData.id}}</p>
+  <p><b>Name:</b> {{itemData.name}}</p>
+  <p><b>Description:</b> {{itemData.description}}</p>
+  <p><b>Price:</b> {{itemData.price}}</p>
+  <p><b>Stock amount:</b> {{itemData.amountOfStock}}</p>
+  <p><b>Stock urgency:</b> {{itemData.stockUrgency}}</p>
+</div>
+
+<form class="createFormDetails" *ngIf="item$ | async; else loading" [formGroup]="itemForm" (ngSubmit)="save(itemForm.value)">
+  <h3 class="itemTitle">Update item details</h3>
+  <div>
+    <label class="form-label-details" for="name">Name</label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+  <div>
+    <label class="form-label-details" for="description">Description</label>
+    <input class="description-input" id="description" type="text" formControlName="description">
+  </div>
+  <div>
+    <label class="form-label-details" for="price">Price</label>
+    <input id="price" type="text" formControlName="price">
+  </div>
+  <div>
+    <label class="form-label-details" for="amountOfStock">Amount in stock</label>
+    <input id="amountOfStock" type="text" formControlName="amountOfStock">
+  </div>
+  <div>
+    <label class="form-label-details" for="stockUrgency">Stock urgency</label>
+    <input id="stockUrgency" type="text" formControlName="stockUrgency">
+  </div>
+  <button type="submit">Save</button>
+</form>
+<ng-template #loading>
+  Loading data...
+</ng-template>
