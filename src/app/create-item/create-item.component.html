@@ -1,17 +1,36 @@
 <div class="form-group">
-  <h3>Add new item</h3>
+  <div class="item-input-container">
+    <h2 class="itemTitle">Create</h2>
+  </div>
+
+  <br>
+  <h3 class="itemTitle">Add new item</h3>
+  <br>
+
   <form (ngSubmit)="onSubmit(form)" #form = "ngForm">
-    <label>Name</label>
-    <input class="form-control" ngModel name="name" placeholder="Name" type="text">
-    <label>Description</label>
-    <input class="form-control" ngModel name="description" placeholder="Description" type="text">
-    <label>Price</label>
-    <input class="form-control" ngModel name="price" placeholder="Price" type="text">
+    <p class="createForm">
+      <label>Name</label>
+      <input class="form-control" ngModel name="name" placeholder="Name" type="text">
+    </p>
+    <p class="createForm">
+      <label>Description</label>
+      <input class="form-control" ngModel name="description" placeholder="Description" type="text">
+    </p>
+    <p class="createForm">
+      <label>Price</label>
+      <input class="form-control" ngModel name="price" placeholder="Price" type="text">
+    </p>
+    <p class="createForm">
     <label>Amount of Stock</label>
     <input class="form-control" ngModel name="amountOfStock" placeholder="Amount of stock" type="text">
-    <label>Stock Urgency</label>
-    <input class="form-control" ngModel name="stockUrgency" placeholder="Stock urgency" type="text">
-    <button class="btn btn-primary pull-right" type="submit">Create Item</button>
-    <button class="btn btn-primary pull-right" (click)="cancel(form)">Cancel</button>
+    </p>
+    <p class="createForm">
+      <label>Stock Urgency</label>
+      <input class="form-control" ngModel name="stockUrgency" placeholder="Stock urgency" type="text">
+    </p>
+    <p class="createForm">
+      <button class="btn btn-primary pull-right" type="submit">Create Item</button>
+      <button class="btn btn-primary pull-right" (click)="cancel(form)">Cancel</button>
+    </p>
   </form>
 </div>

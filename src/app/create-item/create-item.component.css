@@ -1,0 +1,38 @@
+
+.item-input-container{
+  background-color: lightsteelblue;
+  border-bottom-color: black;
+  border-top-color: black;
+  border-bottom-width: thin;
+  border-top-width: thin;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemTitle{
+  padding-left: 20px;
+}
+
+.createForm{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  padding-left: 5px;
+  color: lightgray;
+  font-size: 18px;
+  margin-bottom: .5rem;
+}
+
+
+
+.form-control, .form-select {
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+}
+

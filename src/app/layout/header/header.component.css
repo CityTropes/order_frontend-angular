@@ -1,0 +1,53 @@
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li a {
+  margin: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+
+  padding-left: 1em;
+  padding-right: 1em;
+
+  ;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav a:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:active {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+
+/*nav {*/
+/*  display: flex;*/
+/*  justify-content: end;*/
+/*}*/
+/*nav > a {*/
+/*  margin: auto;*/
+/*  border-width: 1px;*/
+/*  border-style: solid;*/
+/*  border-color: blue;*/
+
+/*  padding-left: 1em;*/
+/*  padding-right: 1em;*/
+/*}*/
+
+/*nav > a:hover {*/
+/*  background-color: blue;*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*}*/
+

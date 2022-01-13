@@ -9,6 +9,7 @@ import { ItemGalleryComponent } from './item-gallery/item-gallery.component';
 import { NameFilterPipe } from './pipe/name-filter.pipe';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { CreateItemComponent } from './create-item/create-item.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateItemComponent } from './create-item/create-item.component';
     ItemComponent,
     ItemGalleryComponent,
     NameFilterPipe,
-    CreateItemComponent
+    CreateItemComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
