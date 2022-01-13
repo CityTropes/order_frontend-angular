@@ -1,5 +1,9 @@
 # OrderFrontendAngular
 
+<p align="center">
+  <img src="https://github.com/CityTropes/order_frontend-angular/blob/931b23f5ec5c939ce9ecda06b7400c2ee2625739/src/assets/img/screen.png" />
+</p>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
