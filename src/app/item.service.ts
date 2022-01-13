@@ -34,7 +34,7 @@ export class ItemService {
   }
 
   saveItem(id: string, value: any): Observable<void> {
-    return this.http.put<void>(`http://localhost:9000/items/${id}`, value);
+    return this.http.put<void>(`http://localhost:8080/items/${id}`, value);
   }
 
 }
